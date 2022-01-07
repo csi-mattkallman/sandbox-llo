@@ -266,9 +266,19 @@
                 <p class="float-right text-sm font-medium text-gray-700">7.00%*</p>
             </div>
               <div>
-                <label for="email" class="block text-sm font-medium text-gray-700 mt-2">Requested Credit Limit</label>
-                <div class="mt-1">
-                  <input type="email" name="email" id="email" class="shadow-sm focus:ring-fuchsia-800 focus:border-fuchsia-800 block w-full sm:text-sm border-gray-300 rounded-md" value="$7,500">
+                <label for="rcl" class="block text-sm font-medium text-gray-700 mt-2">Requested Credit Limit</label>
+                <div class="mt-1 relative rounded-md shadow-sm">
+                  <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <span class="text-gray-500 sm:text-sm">
+                      $
+                    </span>
+                  </div>
+                  <input type="text" name="rcl" id="rcl" class="focus:ring-fuchsia-800 focus:border-fuchsia-800 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-md text-right" value="7500" aria-describedby="price-currency">
+                  <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                    <span class="text-gray-500 sm:text-sm" id="price-currency">
+                      USD
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
